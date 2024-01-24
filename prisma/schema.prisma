@@ -1,0 +1,38 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model gamesession {
+  id        Int      @id @default(autoincrement())
+  userId    Int      @unique
+  roomId    Int
+  isReady   Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model user {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  name      String
+  score     Int      @default(0)
+  picture   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  battleshipPositions battleshipPositions[]
+}
+
+model battleshipPositions {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  roomId    Int
+  position  Json
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  user      user     @relation(fields: [userId], references: [id])
+}

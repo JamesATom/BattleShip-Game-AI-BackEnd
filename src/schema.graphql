@@ -1,0 +1,123 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type User {
+  id: Int!
+  name: String!
+  email: String!
+  picture: String!
+}
+
+type Users {
+  id: Int!
+  name: String!
+  email: String!
+  picture: String!
+  score: Int!
+}
+
+type GoogleConfig {
+  clientID: String!
+}
+
+type JoinRoomResponse {
+  message: String!
+  statusCode: Float!
+}
+
+type LeaveRoomResponse {
+  message: String!
+  statusCode: Float!
+}
+
+type ShipPositionsSetResponse {
+  message: String!
+  statusCode: Float!
+}
+
+type LeaveRoomDuringGameResponse {
+  message: String!
+  statusCode: Float!
+  userId: Float!
+}
+
+type BoardAttackResponse {
+  isHit: Boolean!
+  attackPosition: Float!
+}
+
+type YouWinResponse {
+  message: String!
+  statusCode: Float!
+}
+
+type Query {
+  googleClientID: GoogleConfig!
+}
+
+type Mutation {
+  createUser(data: CreateUserInput!): User!
+  joinRoom(data: JoinRoomInput!): JoinRoomResponse!
+  leaveRoom(data: LeaveRoomInput!): LeaveRoomResponse!
+  setShipPositions(data: SetShipPositionsInput!): ShipPositionsSetResponse!
+  leaveRoomDuringGame(data: LeaveRoomInput!): LeaveRoomDuringGameResponse!
+  attackToBoard(data: BoardAttackInput!): BoardAttackResponse!
+  youWin(data: YouWinInput!): YouWinResponse!
+}
+
+input CreateUserInput {
+  name: String!
+  email: String!
+  picture: String!
+}
+
+input JoinRoomInput {
+  roomId: String!
+  userId: String!
+}
+
+input LeaveRoomInput {
+  userId: String!
+}
+
+input SetShipPositionsInput {
+  userId: String!
+  roomId: String!
+  shipPositions: String!
+}
+
+input BoardAttackInput {
+  roomId: String!
+  userId: String!
+  attackPosition: String!
+}
+
+input YouWinInput {
+  roomId: String!
+  userId: String!
+}
+
+type Subscription {
+  userAdded: [Users!]!
+  shipPositionsSet(data: ShipPositionsSetArgs!): ShipPositionsSetResponse!
+  leaveRoomDuringGameSubscription(data: LeaveRoomDuringGameInput!): LeaveRoomDuringGameResponse!
+  attackToBoardSubscription(data: BoardAttackArgs!): BoardAttackResponse!
+  youWinSubscription(data: YouWinArgs!): YouWinResponse!
+}
+
+input ShipPositionsSetArgs {
+  roomId: String!
+}
+
+input LeaveRoomDuringGameInput {
+  roomId: String!
+}
+
+input BoardAttackArgs {
+  roomId: String!
+}
+
+input YouWinArgs {
+  roomId: String!
+}
