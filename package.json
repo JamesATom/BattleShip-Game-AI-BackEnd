@@ -10,7 +10,7 @@
     "build:swc": "npx swc --out-dir dist -w src",
     "start:swc": "nodemon dist/main",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
-    "start": "nodemon dist/main",
+    "start": "node dist/main",
     "start:dev": "concurrently \"npm run build:swc\" \"npm run start:swc\"",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
@@ -19,7 +19,8 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json"
+    "test:e2e": "jest --config ./test/jest-e2e.json",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "@apollo/server": "^4.9.5",
