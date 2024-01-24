@@ -18,7 +18,7 @@ import { BattleshipModule } from './games/battleship/battleship.module';
         GraphQLModule.forRoot<ApolloDriverConfig>({
             driver: ApolloDriver,
             autoSchemaFile: join(process.cwd(), '/src/schema.graphql'),
-            playground: true,
+            playground: false,
             subscriptions: {
                 'graphql-ws': true
             },
