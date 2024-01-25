@@ -1,6 +1,6 @@
 // battleship.service.ts
 import { Injectable, Inject, HttpStatus } from "@nestjs/common";
-import { PrismaService } from 'src/prismaDB/prisma.service';
+import { PrismaService } from '../../prismaDB/prisma.service';
 import { 
     JoinRoomInput, 
     LeaveRoomInput, 
