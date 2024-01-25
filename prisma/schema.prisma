@@ -4,7 +4,7 @@ generator client {
 
 datasource db {
   provider = "mysql"
-  url      = "mysql://avnadmin:AVNS_xHgq6FjAaJTbYZ-hBGS@james-games-abduhakimovabdulaziz7-7da0.a.aivencloud.com:26876/defaultdb?ssl-mode=REQUIRED"
+  url      = env("DATABASE_URL")
 }
 
 model gamesession {
