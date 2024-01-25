@@ -20,7 +20,7 @@ import {
     YouWinResponse } from './battleship.entity';
 import { PubSub } from 'graphql-subscriptions';
 import { Inject } from '@nestjs/common';
-import { GlobalSubscriptionsService } from 'src/subscriptions/subscriptions.service';
+import { GlobalSubscriptionsService } from '../../subscriptions/subscriptions.service';
 import { Users } from 'src/user/user.entity';
 
 @Resolver()
