@@ -1,7 +1,7 @@
 // subscriptions.service.ts
 import { PubSub } from 'graphql-subscriptions';
 import { Injectable, Inject } from '@nestjs/common';
-import { Users } from 'src/user/user.entity';
+import { Users } from '../user/user.entity';
 
 @Injectable()
 export class GlobalSubscriptionsService {

@@ -21,7 +21,7 @@ import {
 import { PubSub } from 'graphql-subscriptions';
 import { Inject } from '@nestjs/common';
 import { GlobalSubscriptionsService } from '../../subscriptions/subscriptions.service';
-import { Users } from 'src/user/user.entity';
+import { Users } from '../../user/user.entity';
 
 @Resolver()
 export class BattleShipResolver {
