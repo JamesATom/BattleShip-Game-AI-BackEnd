@@ -1,6 +1,6 @@
 // user.service.ts
 import { Injectable, Inject } from '@nestjs/common';
-import { PrismaService } from 'src/prismaDB/prisma.service';
+import { PrismaService } from '../prismaDB/prisma.service';
 import { User } from './user.entity';
 import { CreateUserInput } from './user.inputType';
 import { PubSub } from 'graphql-subscriptions';
