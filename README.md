@@ -39,7 +39,7 @@ A backend server for the Battleship game implemented with Nest.js, TypeScript, N
 2. Navigate to the project directory:
 
    ```bash
-   cd battleship-backend
+   cd server
    ```
 
 3. Install dependencies:
@@ -80,7 +80,7 @@ A backend server for the Battleship game implemented with Nest.js, TypeScript, N
 
 ## GraphQL API
 
-The Battleship game backend provides a GraphQL API for game-related operations. Refer to the [GraphQL API Documentation](./docs/graphql-api.md) for details.
+The Battleship game backend provides a GraphQL API for game-related operations. Refer to the [GraphQL API Documentation](./GRAPHQL.md) for details.
 
 ## Contributing
 
