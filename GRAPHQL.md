@@ -7,7 +7,7 @@ This documentation provides information on how to query the Battleship GraphQL b
 
 ### GraphQL Playground
 
-The Battleship GraphQL API can be interactively explored and tested using GraphQL Playground. Access the playground at your GraphQL server endpoint, typically `http://localhost:3000/graphql`.
+The Battleship GraphQL API can be interactively explored and tested using GraphQL Playground. Access the playground at your GraphQL server endpoint, typically `http://localhost:8000/graphql`.
 
 ### Authentication
 
