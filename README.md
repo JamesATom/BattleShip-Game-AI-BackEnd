@@ -1,10 +1,12 @@
+# Battleship Game Backend
+
+---
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
 
-
-
-# Battleship Game Backend
+---
 
 A backend server for the Battleship game implemented with Nest.js, TypeScript, Nodemon, Yarn, GraphQL WebSocket (graphql-ws), Apollo Server, and Fastify.
 
