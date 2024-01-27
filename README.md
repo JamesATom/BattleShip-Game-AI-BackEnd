@@ -3,7 +3,7 @@
 </p>
 
 
-```markdown
+
 # Battleship Game Backend
 
 A backend server for the Battleship game implemented with Nest.js, TypeScript, Nodemon, Yarn, GraphQL WebSocket (graphql-ws), Apollo Server, and Fastify.
@@ -89,6 +89,5 @@ Feel free to contribute to this project. You can open issues or submit pull requ
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
 
-Make sure to replace placeholders like `your-username` with your actual GitHub username, and consider adding any additional sections or information that might be relevant to your project. Additionally, you may want to include a detailed [GraphQL API Documentation](./docs/graphql-api.md) to help users understand the available endpoints and functionalities.
+
